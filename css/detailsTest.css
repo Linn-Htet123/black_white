@@ -1,0 +1,200 @@
+
+.details{
+    background-color: var(--background-color);
+    height: 100vh;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+h1{
+    padding:0;
+    margin:0;
+}
+.details-whole-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 6px solid white;
+}
+
+.details-left-container{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.detials-img-whole-container{
+    width: 370px;
+    height: 400px;
+    border: 3px solid white;
+   position: relative;
+}
+.details-img-container{
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    z-index: 2;
+    top: 30px;
+    left: 30px;
+    overflow: hidden;
+}
+.img-side-text{
+    color:rgba(118, 118, 118, 0.829);
+    position: absolute;
+    left:-130px;
+    letter-spacing: 8px;
+    top: 50px;
+    font-weight: 600;
+    transform: rotate(270deg);
+    font-size: 1.7rem;
+}
+.img-side-text::after{
+    content: '';
+    width: 120px;
+    height: 4px;
+    top: 13px;
+    left: -140px;
+    z-index: 2;
+    position: absolute;
+    background-color:rgba(118, 118, 118, 0.829) ;
+}
+
+.details-img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.details-right-container{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.details-text-container{
+    max-width: 500px;
+}
+
+.details-text-container h1{
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 4rem;
+    color:white;
+}
+
+.details-text-container .details-text{
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 1rem;
+    color: rgba(118, 118, 118, 0.829) ;
+}
+
+.details-left-second-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media screen and (max-width:994px) {
+    .details{
+        height: 100%;
+    }
+    .details-whole-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .details-second-whole-container{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .details-left-second-container {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .details-left-container{
+        width: 100%;
+        padding-top:50px;
+        padding-bottom:100px;
+    }
+
+    .details-right-container{
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+        /* background-color: var(--background-color); */
+    }   
+
+    .detials-img-whole-container{
+        width:344px;
+        height:364px;
+    }
+    .details-text-container h1{
+     text-align: center;
+     font-size: 4rem;
+    }
+    .details-img-container{
+        top:20px;
+        left: 20px;
+    }
+    .details-img-container img{
+        width: 344px;
+        height: 364px;
+    }
+}
+@media screen and (max-width:478px){
+    .detials-img-whole-container{
+        width:244px;
+        height:264px;
+    }
+    .details-right-second-container{
+        padding-top: 50px;
+    }
+    .details-left-second-container{
+        padding-bottom: 20px;
+    }
+    .details-text-container h1{
+     text-align: center;
+     font-size: 2.6rem;
+     letter-spacing: 3px;
+     line-height: 3rem;
+    }
+    .details-text-container .details-text{
+     font-size: 10px;
+     padding:0 10px;
+
+    }
+    .details-img-container{
+        top:20px;
+        left: 20px;
+    }
+    .details-img-container img{
+        width: 244px;
+        height: 270px;
+    }
+    .img-side-text{
+        color:rgba(118, 118, 118, 0.829);
+        position: absolute;
+        left:-90px;
+        letter-spacing: 6px;
+        top: 30px;
+        font-weight: 600;
+        font-size: 1.2rem;
+        transform: rotate(270deg);
+    }
+    .img-side-text::after{
+        content: '';
+        width: 90px;
+        height: 4px;
+        top: 13px;
+        left: -100px;
+        z-index: 2;
+        position: absolute;
+        background-color:rgba(118, 118, 118, 0.829) ;
+    }
+}
